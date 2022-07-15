@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Anybody:ital,wght@1,800&family=Bebas+Neue&family=Gulzar&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family:  'Trade Winds', cursive;
 }
 
 .navbar {
@@ -24,9 +23,9 @@ body {
   position: relative;
 }
 .content-head1 {
-  font-weight: 900;
+  font-weight: 600;
   padding: 10px;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 65px;
   margin-top: 15%;
 }
@@ -589,9 +588,9 @@ video {
 /* new slider screenshots*/
 #slider {
   position: relative;
-  width: 25%;
-  height: 42vw;
-  margin: 150px auto;
+  width: 35%;
+  height: 70vw;
+  margin: 35px auto;
   font-family: "Helvetica Neue", sans-serif;
   perspective: 1400px;
   transform-style: preserve-3d;
@@ -599,18 +598,18 @@ video {
 
 input[type="radio"] {
   position: relative;
-  top: 108%;
-  left: 30%;
-  width: 18px;
+  top: 112%;
+  left: 88%;
+  width: 10px;
   height: 18px;
-  margin: 0 15px 0 0;
+  margin: 0 20px 0 -23px;
   opacity: 0.4;
   transform: translateX(-83px);
   cursor: pointer;
 }
 
 input[type="radio"]:nth-child(5) {
-  margin-right: 15px;
+  margin-right: 22px;
 }
 
 input[type="radio"]:checked {
@@ -802,6 +801,196 @@ input[type="radio"]:checked {
   transform: translate3d(-10%, 0, -100px);
 }
 
+@media(min-width:576px){
+  #slider {
+    position: relative;
+    width: 22%;
+    height: 42vw;
+    margin: 60px auto;
+    font-family: "Helvetica Neue", sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+  input[type="radio"] {
+    position: relative;
+    top: 108%;
+    left: 30%;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
+  }
+  input[type="radio"]:nth-child(5) {
+    margin-right: 15px;
+  }
+  
+  /* Active Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5,
+#s6:checked ~ #slide6,
+#s7:checked ~ #slide7,
+#s8:checked ~ #slide8,
+#s9:checked ~ #slide9,
+#s10:checked ~ #slide10 {
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide6,
+#s6:checked ~ #slide7,
+#s7:checked ~ #slide8,
+#s8:checked ~ #slide9,
+#s9:checked ~ #slide10,
+#s10:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(40%, 0, -100px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide6,
+#s5:checked ~ #slide7,
+#s6:checked ~ #slide8,
+#s7:checked ~ #slide9,
+#s8:checked ~ #slide10,
+#s9:checked ~ #slide1,
+#s10:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(80%, 0, -200px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide6,
+#s4:checked ~ #slide7,
+#s5:checked ~ #slide8,
+#s6:checked ~ #slide9,
+#s7:checked ~ #slide10,
+#s8:checked ~ #slide1,
+#s9:checked ~ #slide2,
+#s10:checked ~ #slide3 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(125%, 0, -300px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide6,
+#s3:checked ~ #slide7,
+#s4:checked ~ #slide8,
+#s5:checked ~ #slide9,
+#s6:checked ~ #slide10,
+#s7:checked ~ #slide1,
+#s8:checked ~ #slide2,
+#s9:checked ~ #slide3,
+#s10:checked ~ #slide4 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(170%, 0, -400px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide6,
+#s2:checked ~ #slide7,
+#s3:checked ~ #slide8,
+#s4:checked ~ #slide9,
+#s5:checked ~ #slide10,
+#s6:checked ~ #slide1,
+#s7:checked ~ #slide2,
+#s8:checked ~ #slide3,
+#s9:checked ~ #slide4,
+#s10:checked ~ #slide5 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(50%, 0, -500px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide6,
+#s2:checked ~ #slide7,
+#s3:checked ~ #slide8,
+#s4:checked ~ #slide9,
+#s5:checked ~ #slide10,
+#s6:checked ~ #slide1,
+#s7:checked ~ #slide2,
+#s8:checked ~ #slide3,
+#s9:checked ~ #slide4,
+#s10:checked ~ #slide5 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-50%, 0, -500px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide7,
+#s2:checked ~ #slide8,
+#s3:checked ~ #slide9,
+#s4:checked ~ #slide10,
+#s5:checked ~ #slide1,
+#s6:checked ~ #slide2,
+#s7:checked ~ #slide3,
+#s8:checked ~ #slide4,
+#s9:checked ~ #slide5,
+#s10:checked ~ #slide6 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-170%, 0, -400px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide8,
+#s2:checked ~ #slide9,
+#s3:checked ~ #slide10,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2,
+#s6:checked ~ #slide3,
+#s7:checked ~ #slide4,
+#s8:checked ~ #slide5,
+#s9:checked ~ #slide6,
+#s10:checked ~ #slide7 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-125%, 0, -300px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide9,
+#s2:checked ~ #slide10,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3,
+#s6:checked ~ #slide4,
+#s7:checked ~ #slide5,
+#s8:checked ~ #slide6,
+#s9:checked ~ #slide7,
+#s10:checked ~ #slide8 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-82%, 0, -200px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide10,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4,
+#s6:checked ~ #slide5,
+#s7:checked ~ #slide6,
+#s8:checked ~ #slide7,
+#s9:checked ~ #slide8,
+#s10:checked ~ #slide9 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-40%, 0, -100px);
+}
+}
 /* end new slider screenshots */
 
 /* About us */
@@ -838,7 +1027,17 @@ input[type="radio"]:checked {
   padding-top: 18px;
 }
 @media (min-width: 576px) {
+  .img3 {
+    margin-top: -45px;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    filter: drop-shadow(20px 30px 3px #ccc);
+  }
   .text1 {
+    padding-top: 11px;
+  }
+  .text2 {
     padding-top: 11px;
   }
   .text3 {
