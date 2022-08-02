@@ -19,10 +19,17 @@ body {
 /* main header starts */
 .bg-img {
   background: url("images/wavebg.png");
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+.head-inner{
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width:70%;
+  margin-top: 30px;
 }
 .content-head1 {
   font-weight: 600;
@@ -101,24 +108,20 @@ video {
 
 .Button-main {
   position: absolute;
-  bottom: -115px;
-  right: 22px;
+  bottom: -11px;
+  right: 136px;
   font-size: 10px;
   font-weight: 400;
-  width:75%;
-  height:10%;
+  width: 41%;
+  height: 10%;
   color: #fff;
   cursor: pointer;
   text-align: center;
   border: none;
+  border-radius: 50px;
   background-size: 300% 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(247, 27, 255, 1) 4%,
-    rgba(167, 108, 255, 1) 35%,
-    rgba(39, 238, 255, 1) 100%
-  );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  background: linear-gradient( 120deg, rgba(247, 27, 255, 1) 4%, rgba(167, 108, 255, 1) 35%, rgba(39, 238, 255, 1) 100% );
+  box-shadow: 0 4px 15px 0 rgb(116 79 168 / 75%);
   moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -183,6 +186,12 @@ video {
   margin-right: 7px;
 }
 @media (min-width: 576px) {
+  .head-inner{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width:70%;
+  }
   .content-para {
     padding: 10px;
     margin-top: 0px;
@@ -212,59 +221,28 @@ video {
   
   .Button-main {
     position: absolute;
-    bottom: -115px;
-    right: 23px;
-    width: 80%;
+    bottom: 140px;
+    right: 188px;
+    width: 45%;
     font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  cursor: pointer;
-  text-align: center;
-  border: none;
-  background-size: 300% 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(247, 27, 255, 1) 4%,
-    rgba(167, 108, 255, 1) 35%,
-    rgba(39, 238, 255, 1) 100%
-  );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  }
-  .Button-main1 {
-    position: absolute;
-    bottom: -115px;
-    left: 164px;
-    width: 80%;
-    font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  cursor: pointer;
-  text-align: center;
-  border: none;
-  background-size: 300% 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(247, 27, 255, 1) 4%,
-    rgba(167, 108, 255, 1) 35%,
-    rgba(39, 238, 255, 1) 100%
-  );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  }
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(120deg, rgb(247, 27, 255) 4%, rgb(167, 108, 255) 35%, rgb(39, 238, 255) 100%);
+    box-shadow: rgb(116 79 168 / 75%) 0px 4px 15px 0px;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
 }
 /* main header end */
 
 /* cards starts */
 
 .cards {
-  margin-top: 74vh;
+  margin-top: 70vh;
 }
 .cards-list {
   z-index: 0;
