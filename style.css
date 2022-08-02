@@ -105,7 +105,7 @@ video {
   font-size: 10px;
   font-weight: 400;
   width:75%;
-  height:13%;
+  height:10%;
   color: #fff;
   cursor: pointer;
   text-align: center;
@@ -140,7 +140,7 @@ video {
 .Button-main1 {
   position: absolute;
   bottom: -160px;
-  left: 30px;
+  left: 44px;
   font-size: 10px;
   font-weight: 400;
   width:75%;
@@ -217,7 +217,7 @@ video {
   .Button-main {
     position: absolute;
     bottom: -115px;
-    right: 187px;
+    right: 160px;
     width: 80%;
     font-size: 16px;
   font-weight: 400;
@@ -268,7 +268,7 @@ video {
 /* cards starts */
 
 .cards {
-  margin-top: 110vh;
+  margin-top: 88vh;
 }
 .cards-list {
   z-index: 0;
@@ -384,7 +384,10 @@ video {
   padding: 30px;
   /* background-color: #f0fdff; */
 }
-
+.profile1{
+  width:16px;
+  margin-right: 5px;
+}
 .features-innerimg {
   /* background: url("/images/background.jpg");
   background-position: center;
