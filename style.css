@@ -3,7 +3,9 @@ body {
   box-sizing: border-box;
   font-family:  'Trade Winds', cursive;
 }
-
+.nav-img{
+  width:38px;
+}
 .navbar {
   background: linear-gradient(
     120deg,
@@ -217,7 +219,7 @@ video {
   .Button-main {
     position: absolute;
     bottom: -115px;
-    right: 160px;
+    right: 23px;
     width: 80%;
     font-size: 16px;
   font-weight: 400;
@@ -268,7 +270,7 @@ video {
 /* cards starts */
 
 .cards {
-  margin-top: 88vh;
+  margin-top: 74vh;
 }
 .cards-list {
   z-index: 0;
@@ -357,6 +359,44 @@ video {
   
 }
 /* cards ends */
+/* vide */
+.Video-main{
+  height: 79vh;
+  background: rgba(0, 0, 100, 0.5);
+}
+.video-Background{
+  position: absolute;
+  z-index: -1;
+}
+.Welcome-msg{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  top: 160px;
+}
+.Welcome-msg h1{
+  font-size: 80px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+.videbtn{
+  font-size: 18px;
+  color:#fff;
+  margin: 5px;
+  padding: 7px 22px;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 25px;
+  background: #45CFFF;
+}
+@media(min-width:576px){
+  .Video-main{
+    height: 100vh;
+    background: rgba(0, 0, 100, 0.4);
+  }
+}
+/* end vd */
 /* headings end */
 /* features start */
 .Features {
