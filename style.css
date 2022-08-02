@@ -40,7 +40,7 @@ body {
   text-align: center;
 }
 
-.smartphone {
+.MainImage {
   position: relative;
   width: 75%;
   height: 80vh;
@@ -50,11 +50,12 @@ body {
   border-bottom-width: 60px;
   border-radius: 36px;
   margin-right: 61px;
-  /* filter: drop-shadow(20px 30px 3px #0000004f); */
 }
+  /* filter: drop-shadow(20px 30px 3px #0000004f); */
+
 
 /* The horizontal line on the top of the device */
-.smartphone:before {
+ .MainImage:before {
   content: "";
   display: block;
   width: 60px;
@@ -67,7 +68,7 @@ body {
   border-radius: 10px;
 }
 
-.smartphone:after {
+.MainImage:after {
   content: "";
   display: block;
   width: 35px;
@@ -80,20 +81,18 @@ body {
   border-radius: 50%;
 }
 
-/* .ytvideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-} */
+
 .video-wrapper {
   width: 100%;
   height: 74vh;
   overflow: hidden;
+} 
+
+.logo{
+  width: 100px;
 }
+
+
 video {
   object-fit: fill;
   width: 100%;
@@ -198,7 +197,7 @@ video {
     margin-top: 15%;
   }
   
-  .smartphone {
+  .MainImage {
     position: relative;
     width: 60%;
     height: 80vh;
@@ -209,11 +208,6 @@ video {
     border-radius: 36px;
     margin-right: 61px;
     /* filter: drop-shadow(20px 30px 3px #0000004f); */
-  }
-  video {
-    object-fit: fill;
-    width: 100%;
-    height:100%;
   }
   
   .Button-main {
@@ -360,6 +354,11 @@ video {
 }
 /* cards ends */
 /* vide */
+video {
+  object-fit: fill;
+  width: 100%;
+  height:100%;
+}
 .Video-main{
   height: 79vh;
   background: rgba(0, 0, 100, 0.2);
@@ -427,17 +426,13 @@ video {
 .features-main {
   margin: 0;
   padding: 30px;
-  /* background-color: #f0fdff; */
+  
 }
 .profile1{
   width:16px;
   margin-right: 5px;
 }
 .features-innerimg {
-  /* background: url("/images/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   width: 100%;
   height: 75vh;
   position: relative;
@@ -498,16 +493,6 @@ video {
   font-family: " Roboto", Sans-serif;
   border-radius: 50%;
 }
-
-/* .features-content::after {
-  position: absolute;
-  width: 50px;
-  content: "";
-  height: 3px;
-  top: 0;
-  background-color: #000;
-} */
-
 .features-content:hover {
   border: 2px solid var(--primary);
   color: var(--Third);
@@ -610,7 +595,7 @@ video {
   position: relative;
   width: 35%;
   height: 70vw;
-  margin: 60px auto;
+  margin: 75px auto;
   font-family: "Helvetica Neue", sans-serif;
   perspective: 1400px;
   transform-style: preserve-3d;
@@ -1014,10 +999,19 @@ input[type="radio"]:checked {
 /* end new slider screenshots */
 
 /* About us */
+
 .img3 {
   margin-top: -45px;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+  filter: drop-shadow(20px 30px 3px #ccc);
+}
+.img2 {
+  margin-top: -45px;
+  width: 50%;
+  height: 100%;
+  padding-left: 50px;
   border-radius: 20px;
   filter: drop-shadow(20px 30px 3px #ccc);
 }
@@ -1058,6 +1052,13 @@ input[type="radio"]:checked {
     border-radius: 20px;
     filter: drop-shadow(20px 30px 3px #ccc);
   }
+  .img2 {
+    margin-top: -45px;
+    width: 60%;
+    height:100%;
+    border-radius: 20px;
+    filter: drop-shadow(20px 30px 3px #ccc);
+  }
   .text1 {
     padding-top: 11px;
     font-size: 28px;
@@ -1080,47 +1081,7 @@ input[type="radio"]:checked {
     text-align: justify;
   }
 }
-/* .about-image{
-  marign-top:10vh;
-} */
-/* .animate-charcter1 {
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    rgb(122, 108, 215) 0%,
-    rgb(215, 86, 121) 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: 45px;
-}
-.animate-charcter2 {
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    rgb(122, 108, 215) 0%,
-    rgb(215, 86, 121) 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: 45px;
-} */
+
 /* About us end */
 /* promo */
 #promo{
@@ -1252,7 +1213,7 @@ input[type="radio"]:checked {
     right: 0;
     bottom: 0;
   }
-  .smartphone {
+  .MainImage {
     position: relative;
     width: 50%;
     height: 90vh;
